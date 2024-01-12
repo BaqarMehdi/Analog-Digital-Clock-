@@ -1,0 +1,223 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fefae0;
+}
+
+/* Digital Clock Css */
+.clock {
+  margin: 0.51rem auto;
+  justify-content: center;
+  display: flex;
+  background-color: currentColor;
+  max-width: 480px;
+  padding: 10px 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 12px;
+  font-size: 2.4rem;
+  border: 2px solid;
+  border: 5px solid #023047;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.clock h1,
+span {
+  color: #0096c7;
+}
+
+@media only screen and (max-width: 600px) {
+  .clock {
+    margin: 0.51rem auto;
+    max-width: 280px;
+    display: flex;
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+}
+
+/* Digital Clock Css Ends */
+
+
+/* Analog Clock Css  */
+.clock-body {
+  height: 500px;
+  width: 500px;
+  border: 15px solid #023047;
+  background-color: currentColor;
+  border-radius: 50%;
+  position: relative;
+  margin: 0px auto;
+}
+
+/* Center Point Where all clock hands are connected */
+.point {
+  height: 20px;
+  width: 20px;
+  background-color: #3d405b;
+  position: absolute;
+  border-radius: 50%;
+  top: 240px;
+  left: 240px;
+}
+
+/* Hour Numbers */
+.hour {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  color: #0096c7;
+}
+
+.hour-1 {
+  top: 40px;
+  right: 130px;
+}
+
+.hour-2 {
+  top: 125px;
+  right: 45px;
+}
+
+.hour-3 {
+  top: 235px;
+  right: 10px;
+}
+
+.hour-4 {
+  top: 345px;
+  right: 45px;
+}
+
+.hour-5 {
+  top: 430px;
+  right: 130px;
+}
+
+.hour-6 {
+  bottom: 10px;
+  left: 240px;
+}
+
+.hour-7 {
+  top: 430px;
+  left: 130px;
+}
+
+.hour-8 {
+  top: 345px;
+  left: 45px;
+}
+
+.hour-9 {
+  top: 235px;
+  left: 10px;
+}
+
+.hour-10 {
+  top: 125px;
+  left: 45px;
+}
+
+.hour-11 {
+  top: 40px;
+  left: 130px;
+}
+
+.hour-12 {
+  top: 10px;
+  right: 235px;
+}
+
+/* Brand Name */
+.brand-name {
+  position: absolute;
+  font-size: 25px;
+  top: 110px;
+  left: 215px;
+  color: #0096c7;
+}
+
+/* Minute Hand */
+.minute-hand-wrapper {
+  height: 400px;
+  width: 400px;
+  top: 50px;
+  left: 50px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.minute-hand {
+  position: relative;
+}
+
+.minute-hand .hand {
+  width: 4px;
+  height: 200px;
+  position: absolute;
+  background-color: #3d405b;
+  left: 198px;
+}
+
+.minute-hand .arrow {
+  font-size: 30px;
+  font-weight: bold;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 190px;
+  top: -7px;
+  color: #3d405b;
+}
+
+/* Hour Hand */
+.hour-hand-wrapper {
+  height: 300px;
+  width: 300px;
+  top: 100px;
+  left: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hour-hand {
+  position: relative;
+}
+
+.hour-hand .hand {
+  width: 4px;
+  height: 150px;
+  position: absolute;
+  background-color: #3d405b;
+  left: 148px;
+}
+
+.hour-hand .arrow {
+  font-size: 30px;
+  font-weight: bold;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 140px;
+  top: -7px;
+  color: #3d405b;
+}
+
+/* second hand */
+.second-hand-wrapper {
+  height: 350px;
+  width: 350px;
+  top: 75px;
+  left: 75px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.second-hand {
+  position: relative;
+}
+
+.second-hand .hand {
+  width: 2px;
+  height: 175px;
+  position: absolute;
+  background-color: #3d405b;
+  left: 174px;
+}
